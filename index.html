@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두드림cook</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- 1. 헤더영역 시작: -->
+    <!--아이템 배치하기: d-flex(옆으로 배치), flex-colum(세로로 배치정렬), justify-content-center(세로로가운데 정렬), align-items-center(가로로 가운데 정렬) -->
+    <!-- display-3 h태그보다 큰 글씨, fs-2 폰트 사이즈: 아래쪽 텍스트와 조금 띄우기, lead 조금 두드러진 효과 및 아래쪽 버튼과 띄우기 -->
+    <header class="vh-100 text-white d-flex flex-column justify-content-center align-items-center" id="home">                <!-- vh-100: 디폴트로 화면을 채워서 사용-->
+        <h1 class="display-3, fw-bolder, mb-5">두드림 ART Cook</h1>
+        <h4 class="fs-2 mb-3">요리와 아트의 만남</h4>
+        <p class="lead mb-5">아름다운 한 끼로 삶의 색채를 더하다</p>
+        <button type="button" class="btn btn-outline-warning rounded-pill">대표 요리 보기</button>
+     </header>
+<!-- 헤더영역 킅 -->
+<!-- 2. 쉐프 소개 섹션 시작: container: 화면 왼쪽에 공간을 가지고 갈때 /사진 사이즈 반응형 조종:img-fluid -->
+     <section class="container" id="about-chef">
+        <div class="text-center py-5">
+            <h2 class="fw-bold">ART Cook Chef</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing At, earm</p>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-7 col-lg-5">
+                <img src="./images/chef.jpg" alt="쉐프" class="img-fluid">
+            </div>
+            <div class="col-md-7">
+                <h3 class="fw-bold mb-3 my-md-0 mb-md-3">두드림 Emmi</h3>
+                <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure culpa vel aspernatur a eligendi inventore voluptatum velit consequuntur asperiores id temporibus quod, quas tenetur cum iusto ex nam distinctio amet.</p>
+                <p class="lh-lg">Iure repudiandae temporibus maiores rerum quasi nesciunt blanditiis earum rem obcaecati quibusdam praesentium molestiae soluta, est voluptatibus error quos nisi officia adipisci quam deserunt repellendus sequi aliquid. Omnis, eius minus.</p>
+            </div>
+        </div>
+     </section>
+<!-- 쉐프 소개 섹션 끝 -->
+<!-- 3. 포트폴리오 섹션 시작: container / row + col 사용 / 패딩 Y열 간격(py), 패딩 X행(pb) 띄우기 -->
+    <!-- 거터는 열 사이의 패딩으로, Bootstrap 그리드 시스템에서 콘텐츠의 간격을 맞추고 정렬하는 데에 사용 -->
+     <section class="bg-dark" id="portfolio">
+        <div class="container">
+            <div class="text-white py-5 text-center">
+                <h2 class="fw-bold">ART Cook 포트폴리오</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing At, earm</p>
+            </div>
+            <div class="row g-4 pb-5">
+                <div class="col-sm-6 col-lg-4">
+                    <img src="./images/portfolio1.jpg" alt="포트폴리오1" class="img-thumbnail">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <img src="./images/portfolio2.jpg" alt="포트폴리오2" class="img-thumbnail">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <img src="./images/portfolio3.jpg" alt="포트폴리오3" class="img-thumbnail">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <img src="./images/portfolio4.jpg" alt="포트폴리오4" class="img-thumbnail">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <img src="./images/portfolio5.jpg" alt="포트폴리오5" class="img-thumbnail">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <img src="./images/portfolio6.jpg" alt="포트폴리오6" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+
+     </section>
+<!-- 포트폴리오 섹션 끝 -->
+<!-- 4. SNS 섹션 시작: css 에서 이미지 연결 / sns 아이콘 디플렉스로 정렬 -->
+     <section id="sns-links" class="py-5">
+        <div class="container">
+            <div class="text-white text-center">
+                <h2 class="fw-bold">ART Cook SNS</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing At, earm</p>
+            </div>
+            <div class="d-flex justify-content-evenly">
+                <a class="bi bi-youtube display-3" href="https://www.youtube.com"></a>
+                <a class="bi bi-facebook display-3" href="https://facebook.com"></a>
+                <a class="bi bi-instagram display-3" href="https://instagram.com"></a>
+
+            </div>
+        </div>
+
+     </section>
+
+<!-- SNS 섹션 끝 -->
+
+    
+    <script src="./jss/bootstrap.bundle.js"></script>
+
+</body>
+</html>
