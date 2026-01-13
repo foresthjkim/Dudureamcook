@@ -7,6 +7,7 @@
     <title>두드림cook</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -71,26 +72,70 @@
 
      </section>
 <!-- 포트폴리오 섹션 끝 -->
-<!-- 4. SNS 섹션 시작: css 에서 이미지 연결 / sns 아이콘 디플렉스로 정렬 -->
-     <section id="sns-links" class="py-5">
-        <div class="container">
-            <div class="text-white text-center">
-                <h2 class="fw-bold">ART Cook SNS</h2>
+<!-- 4. SNS 섹션 시작: css 에서 이미지 연결 / sns 아이콘 디플렉스로 정렬 / d-flex 반응형 플렉스로 변형 -->
+     <section id="sns-links" class="py-5">   <!-- py 위와의 간격을 패딩 py-5 적용 -->
+        <div class="container text-white text-center">
+            <div>
+                <h2 class="fw-bold mb-3">ART Cook SNS</h2>
                 <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing At, earm</p>
             </div>
-            <div class="d-flex justify-content-evenly">
-                <a class="bi bi-youtube display-3" href="https://www.youtube.com"></a>
-                <a class="bi bi-facebook display-3" href="https://facebook.com"></a>
-                <a class="bi bi-instagram display-3" href="https://instagram.com"></a>
+            <!-- <div class="d-flex justify-content-evenly">
+                <a class="bi bi-youtube display-1" href="https://www.youtube.com" target="_blank"></a>
+                <a class="bi bi-facebook display-1" href="https://facebook.com" target="_blank"></a>
+                <a class="bi bi-instagram display-1" href="https://instagram.com" target="_blank"></a>
+                <a class="fa-solid fa-comment btn btn-warning d-flex align-items-center gap-2" href="http://kakao.com" target="_blank"></a>           
+            </div> -->
+             <div class="d-flex justify-content-evenly w-70 mt-4 m-auto sns2">
+                <a href="https://www.youtube.com" target="_blank" class="btn btn-danger rounded-pill btn-lg px-4"><i class="bi bi-youtube"></i></a>
+                <a href="https://facebook.com" target="_blank" class="btn btn-primary rounded-pill btn-lg px-4"><i class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" class="btn btn-warning rounded-pill btn-lg px-4"><i class="bi bi-instagram"></i></a>
+                <a href="http://kakao.com" target="_blank"> <img src="./images/kakao.jpg" alt="카카오" width="80px" class="btn btn-warning rounded-pill btn-lg px-4"></a>
 
             </div>
         </div>
+     </section>
+<!-- SNS 섹션 끝 -->
+<!-- 연락처 섹션 시작 -->
+     <section class="container text-center py-5" id="contact">
+        <div>
+            <h2 class="fw-bold">Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing At, earm</p>
+        </div>
+        <div class="row g-3 py-5">       <!-- 거터 gx-: 열과 열사이의 패딩 간격을 주겠다. 이유는 모바일 반응형인 경우 고정 열 간격유지-->
+            <div class="col-md">
+                <div class="shadow p-4 border-bottom border-4 border-warning">
+                    <i class="bi bi-envelope-at fs-5 text-warning"></i>
+                    <h3 class="fw-bold fs-5 py-2">이메일</h3>
+                    <hr>
+                    <p class="text-secondary">foresthjkim@icloud.com</p>
+                </div>
+            </div>
+            <div class="col-md"> 
+                <div class="shadow p-4 border-bottom border-4 border-success">
+                    <i class="bi bi-telephone-plus fs-5 text-success"></i>
+                    <h3 class="fw-bold fs-5 py-2">전화번호</h3>
+                    <hr>
+                    <p class="text-secondary">010-5253-6348</p>
+                </div>
+            </div>
+            <div class="col-md"> 
+                <div class="shadow p-4 border-bottom border-4 border-warning">
+                    <i class="bi bi-house-door fs-5 text-warning"></i>
+                    <h3 class="fw-bold fs-5 py-2">주소</h3>
+                    <hr>
+                    <p class="text-secondary">경기도 성남시 분당구 야탑동 </p>
+                    </div>
+            </div>
+
+        </div>   
 
      </section>
 
-<!-- SNS 섹션 끝 -->
+<!-- 연락처 섹션 끝 -->   
 
-    
+
+
+
     <script src="./jss/bootstrap.bundle.js"></script>
 
 </body>
