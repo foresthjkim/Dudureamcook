@@ -14,8 +14,23 @@ header {
     background-position: center top;
 
 }
+
+/* 서비스 영역 */
+.card-hover:hover {
+    cursor: pointer;
+    background-color: beige;
+}
+
+/* sns 링크 */
 section#sns-links {
     background-image: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(../images/sns-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*뉴스 링크 */
+section#news {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url(../images/news-bg.jpg);
     background-size: cover;
     background-position: center;
 }
