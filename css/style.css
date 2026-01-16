@@ -4,8 +4,13 @@
 body {
   font-family: "Noto Sans", sans-serif;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .gugi-font {
     font-family: "Gugi", sans-serif;
+}
+
+/* 네비게이션 영역 */
+.nav-link:hover, .nav-link.active {
+    color:#ffc107 !important;           /*!important: 사용빈도를 최상위로 높여서 이 색상을 먼저 적용하고자 할때 */
 }
 
 header {

@@ -11,7 +11,42 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
+<!-- 네비게이션 시작 : 햄버거 버튼 (메뉴) -->
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
+        <div class="container">
+        <a class="navbar-brand gugi-font" href="#home">
+            <img src="./images/logo.png" alt="logo">두드림 Cook
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto my-2">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">홈</a>
+            </li>       
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">포트폴리오</a>
+            </li>       
+            <li class="nav-item">
+                <a class="nav-link" href="#service">서비스</a>
+            </li>       
+            <li class="nav-item">
+                <a class="nav-link" href="#blog">블로그</a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">연락처</a>
+            </li>      
+
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+<!-- 네비게이션 끝 -->
+
 <!-- 1. 헤더영역 시작: -->
     <!--아이템 배치하기: d-flex(옆으로 배치), flex-colum(세로로 배치정렬), justify-content-center(세로로가운데 정렬), align-items-center(가로로 가운데 정렬) -->
     <!-- display-3 h태그보다 큰 글씨, fs-2 폰트 사이즈: 아래쪽 텍스트와 조금 띄우기, lead 조금 두드러진 효과 및 아래쪽 버튼과 띄우기 -->
@@ -19,7 +54,34 @@
         <h1 class="display-3, fw-bolder, mb-5">두드림 ART Cook</h1>
         <h4 class="fs-2 mb-3">요리와 아트의 만남</h4>
         <p class="lead mb-5">아름다운 한 끼로 삶의 색채를 더하다</p>
-        <button type="button" class="btn btn-outline-warning rounded-pill">대표 요리 보기</button>
+        <!-- <button type="button" class="btn btn-outline-warning rounded-pill">대표 요리 보기</button> -->
+
+    <!-- 대표요리 보기 클릭시 팝업 띄우기 -->
+        <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#bestmenuModal">
+                대표 요리 보기
+            </button>
+        <!-- Modal: id 값이 같아야 한다. -->
+            <div class="modal fade" id="bestmenuModal" tabindex="-1" aria-labelledby="bestmenuModal" data-bs-target="bestmenuModel">
+            <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5 text-dark">ART Cook 대표 요리</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="aria-label=닫기"></button>
+                </div>
+                <div class="modal-body">        <!-- 헤더섹션 모달 띄우기 -->
+                    <img src="images/bestmenu.jpg" alt="대표 요리" class="img-fluid">
+                    <p class="text-muted">Lorem Modal body text goes here.</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est delectus nostrum dolor nesciunt in ipsam porro optio impedit molestiae, modi necessitatibus, incidunt iure quos sed ut 
+                    Dolore sequi eveniet ratione quibusdam, possimus nam in rerum repudiandae corporis vitae aperiam maiores aspernatur omnis quo, molestiae nesciunt enim aliquid iure voluptatum ipsam rem error! 
+                    Dolore sequi eveniet ratione quibusdam, possimus nam in rerum repudiandae corporis vitae aperiam maiores aspernatur omnis quo, molestiae nesciunt enim aliquid iure voluptatum ipsam rem error! 
+                    Voluptatem repellendus ab quos!</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        <!-- 모달 끝 -->
+    <!-- 대표요리 보기 클릭시 팝업 틔우기 끝  -->
      </header>
 <!-- 헤더영역 킅 -->
 <!-- 2. 쉐프 소개 섹션 시작: container: 화면 왼쪽에 공간을 가지고 갈때 /사진 사이즈 반응형 조종:img-fluid -->
@@ -229,16 +291,16 @@
             <div class="col-lg-3">
             <!-- 모달: 라이브 데모 소스코드 사용 -->
             <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsModal">
                 뉴스보기
                 </button>
 
                 <!-- Modal: id 값이 같아야 한다. -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <h1 class="modal-title fs-5" id="newsModalLabel">Modal title</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -247,7 +309,6 @@
                             <iframe src="https://www.youtube.com/embed/KV-3Gq0R_Ks?si=HY6NVNttZTgblHSy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-                
                 
                     </div>
                 </div>
@@ -290,7 +351,7 @@
                     <h3 class="fw-bold fs-5 py-2">주소</h3>
                     <hr>
                     <p class="text-secondary">경기도 성남시 분당구 야탑동 </p>
-                    </div>
+                </div>
             </div>
         </div>   
      </section>
